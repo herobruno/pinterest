@@ -1,67 +1,78 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 24px;
-    font-family: Arial, sans-serif;
-    background-color: white;
-    border-bottom: 1px solid #ccc;
-  }
-  
-  .navbar-left {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-  }
-  
-  .logo {
-    height: 24px;
-  }
-  
-  .explorar {
-    font-weight: 500;
-    font-size: 14px;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .navbar-right {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-  }
-  
-  .navbar-right a {
-    text-decoration: none;
-    color: #111;
-    font-weight: 500;
-    font-size: 14px;
-  }
-  
-  .entrar {
-    background-color: #e60023;
-    color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: bold;
-    font-size: 14px;
-  }
-  
-  .criar-conta {
-    background-color: #efefef;
-    color: #111;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 999px;
-    cursor: pointer;
-    font-weight: 500;
-    font-size: 14px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  font-family: Arial, sans-serif;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  height: 24px;
+}
+
+.explorar {
+  font-weight: 500;
+  font-size: 15px;
+  color: #333;
+  cursor: pointer;
+  font-weight: bold;
+  padding-left: 20px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 500;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.entrar {
+  background-color: #e60023;
+  color: white;
+  border: none;
+  padding: 18px 16px;
+  margin-right: -10px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.criar-conta {
+  background-color: #efefef;
+  color: #111;
+  border: none;
+  padding: 18px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+  font-weight: bold;
+}
+.Pinterest {
+  color: #e60023;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+}

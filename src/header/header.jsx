@@ -10,7 +10,9 @@ export default function Header() {
           alt="Pinterest Logo"
           className="logo"
         />
+        <span className="Pinterest">Pinterest</span>
         <span className="explorar">Explorar</span>
+
       </div>
       <div className="navbar-right">
         <a href="#">Sobre</a>
