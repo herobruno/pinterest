@@ -1,0 +1,227 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    color: #111;
+    line-height: 1.5;
+  }
+  
+  /* Barra de navegação superior */
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+  }
+  
+  /* Botão à esquerda */
+  .left-nav .browse-btn {
+    text-decoration: none;
+    color: #e60023;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 8px 16px;
+    border: 2px solid #e60023;
+    border-radius: 24px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .left-nav .browse-btn:hover {
+    background-color: #e60023;
+    color: white;
+  }
+  
+  /* Navegação à direita */
+  .top-nav ul {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+  }
+  
+  .top-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    transition: color 0.3s;
+  }
+  
+  .top-nav a:hover {
+    color: #e60023;
+  }
+  
+  .top-nav .signup-btn {
+    background-color: #e60023;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-weight: bold;
+  }
+  
+  /* Layout principal */
+  .container {
+    display: flex;
+    min-height: calc(100vh - 70px);
+  }
+  
+  /* Painel esquerdo com imagem e overlay escuro */
+  .left-panel {
+    flex: 1;
+    background-image: url('/src/assets/imgfundo.png'); /* ajuste o caminho se necessário */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    color: white;
+  }
+  
+  .left-panel::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* filtro escuro */
+    z-index: 0;
+  }
+  
+  .overlay-text {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    width: 100%;
+    padding-left: 0px;
+  }
+  
+  .left-panel h1 {
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+    line-height: 1.2;
+  }
+  
+  /* Painel direito */
+  .right-panel {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .right-panel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .login-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+  }
+  
+  .login-form a {
+    font-size: 14px;
+    color: #0066cc;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline;
+  }
+  
+  .login-form button[type="submit"] {
+    padding: 12px;
+    background-color: #e60023;
+    color: white;
+    border: none;
+    border-radius: 24px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .login-form button[type="submit"]:hover {
+    background-color: #b0001b;
+  }
+  
+  .divider {
+    text-align: center;
+    margin: 25px 0;
+    font-weight: 500;
+    color: #999;
+  }
+  
+  /* Botões sociais */
+  button.btn-facebook,
+  button.btn-google,
+  button.btn-apple {
+    padding: 12px;
+    font-size: 15px;
+    border: 1px solid #4d87f3;
+    border-radius: 24px;
+    background-color: #4d87f3;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.2s;
+  }
+  
+  button.btn-facebook:hover,
+  button.btn-google:hover,
+  button.btn-apple:hover {
+    background-color: #3c6ed1;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  
+    .left-panel, .right-panel {
+      flex: none;
+      width: 100%;
+    }
+  
+    .left-panel {
+      order: 2;
+      text-align: center;
+    }
+  
+    .top-nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .top-nav ul {
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  }
+  

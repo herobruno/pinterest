@@ -18,7 +18,7 @@ export default function Header() {
         <a href="#">Sobre</a>
         <a href="#">Empresa</a>
         <a href="#">Blog</a>
-        <button className="entrar">Entrar</button>
+       
         <button className="criar-conta">Criar conta</button>
       </div>
     </nav>
