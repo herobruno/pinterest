@@ -1,12 +1,45 @@
-# React + Vite
+# Pinterest Clone - Projeto React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma réplica visual simplificada do site Pinterest, desenvolvido como parte de um exercício de front-end utilizando **React** com **Vite**.
 
-Currently, two official plugins are available:
+## 🔧 Tecnologias utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React (JavaScript)
+- Vite
+- CSS puro
+- HTML
 
-## Expanding the ESLint configuration
+## 📂 Estrutura do projeto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- `src/components` — componente principal `App.tsx`
+- `src/header` — cabeçalho da aplicação
+- `src/galery` — galeria de imagens
+- `src/footer` — rodapé estilizado com colunas e logo
+- `src/assets` — imagem da logo do Pinterest
+
+## 🎨 Funcionalidades implementadas
+
+- Layout inspirado no Pinterest
+- Barra de navegação com links
+- Galeria com imagens estilizadas
+- Rodapé completo com:
+  - Logo do Pinterest
+  - Links úteis
+  - Idioma selecionado
+
+## 📷 Preview
+
+![image](https://github.com/user-attachments/assets/cdfdcec8-ac83-4772-9877-b41c7e385745)
+
+
+## 👥 Desenvolvido por
+
+- **Bruno**
+- **Charles**
+- **Rodrigo**
+
+## 🚀 Como executar
+
+```bash
+npm install
+npm run dev
