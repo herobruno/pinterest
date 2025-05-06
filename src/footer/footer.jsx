@@ -1,14 +1,12 @@
 import './footer.css';
-import pinterestLogo from '../assets/Pinterest-logo.png';
 
 export default function Rodape() {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-left">
-          <img src={pinterestLogo} alt="Logo do Pinterest" className="logo-img" />
-          <div className="idioma">
-            🌐 <span>Português<br />(Brasil)</span>
+          <h3>Pinterest</h3>          <div className="idioma">
+             <span>Português<br />(Brasil)</span>
           </div>
         </div>
 

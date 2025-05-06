@@ -6,6 +6,10 @@
     font-size: 14px;
     color: #333;
   }
+
+  h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
   
   .footer-container {
     max-width: 1200px;
@@ -24,6 +28,8 @@
     align-items: flex-start;
     justify-content: flex-start;
     min-width: 180px;
+    font-weight: bold;
+    
   }
   
   .logo-img {
