@@ -16,8 +16,8 @@ export default function Header() {
       </div>
       <div className="navbar-right">
         <a href="#">Sobre</a>
-        <a href="#">Empresa</a>
-        <a href="#">Blog</a>
+        <a href="#">Notícias</a>
+       
        
         <button className="criar-conta">Criar conta</button>
       </div>
