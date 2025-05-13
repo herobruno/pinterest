@@ -8,35 +8,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 25px;
-  font-family: Arial, sans-serif;
-  background-color: rgb(255, 255, 255);
-  border-bottom: 1px solid #ccc;
+  padding: 16px 24px;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-left {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 24px;
 }
 
 .logo {
+  width: 24px;
   height: 24px;
 }
 
 .explorar {
-  font-weight: 500;
-  font-size: 15px;
+  text-decoration: none;
   color: #333;
-  cursor: pointer;
-  font-weight: bold;
-  padding-left: 20px;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 24px;
+  transition: background-color 0.2s;
+}
+
+.explorar:hover {
+  background-color: #f0f0f0;
 }
 
 .navbar-right {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 24px;
 }
 
 .navbar-right a {
@@ -47,32 +51,55 @@
   font-weight: bold;
 }
 
-.entrar {
-  background-color: #e60023;
-  color: white;
-  border: none;
-  padding: 18px 16px;
-  margin-right: -10px;
-  border-radius: 999px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 14px;
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 24px;
+  transition: background-color 0.2s;
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
 }
 
 .criar-conta {
-  background-color: #efefef;
-  color: #111;
+  background-color: #e60023;
+  color: white;
   border: none;
-  padding: 18px 16px;
-  border-radius: 999px;
+  padding: 12px 16px;
+  border-radius: 24px;
+  font-weight: 600;
   cursor: pointer;
-  font-weight: 500;
-  font-size: 14px;
-  font-weight: bold;
+  transition: background-color 0.2s;
 }
+
+.criar-conta:hover {
+  background-color: #d50021;
+}
+
 .Pinterest {
+  font-weight: 600;
+  font-size: 1.2rem;
   color: #e60023;
-  font-weight: bold;
-  font-size: 20px;
-  padding: 0;
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 16px;
+  }
+
+  .navbar-right {
+    gap: 16px;
+  }
+
+  .nav-link {
+    padding: 6px 12px;
+  }
+
+  .criar-conta {
+    padding: 8px 12px;
+  }
 }

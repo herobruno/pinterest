@@ -17,10 +17,8 @@ export default function Header() {
         <Link to="/photos" className="explorar">Explorar</Link>
       </div>
       <div className="navbar-right">
-        <a href="#">Sobre</a>
-        <a href="#">Notícias</a>
-       
-       
+        <Link to="/about" className="nav-link">Sobre</Link>
+        <Link to="/news" className="nav-link">Notícias</Link>
         <button className="criar-conta">Criar conta</button>
       </div>
     </nav>
