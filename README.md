@@ -7,13 +7,14 @@ Este projeto é uma réplica visual simplificada do site Pinterest, desenvolvido
 - React (JavaScript)
 - Vite
 - CSS puro
+- [react-masonry-css](https://www.npmjs.com/package/react-masonry-css) (para grid estilo Pinterest)
 - HTML
 
 ## 📂 Estrutura do projeto
 
-- `src/components` — componente principal `App.tsx`
+- `src/components` — componentes principais, incluindo a página de fotos (`Photos.jsx`)
 - `src/header` — cabeçalho da aplicação
-- `src/galery` — galeria de imagens
+- `src/galery` — galeria de imagens da home
 - `src/footer` — rodapé estilizado com colunas e logo
 - `src/assets` — imagem da logo do Pinterest
 
@@ -21,7 +22,15 @@ Este projeto é uma réplica visual simplificada do site Pinterest, desenvolvido
 
 - Layout inspirado no Pinterest
 - Barra de navegação com links
-- Galeria com imagens estilizadas
+  - **Logo e título Pinterest** agora levam para a página inicial ao serem clicados
+  - Link "Explorar" leva para a página de fotos
+- Página **Explorar** (`/photos`):
+  - Consome a API pública [Picsum Photos](https://picsum.photos/v2/list)
+  - Exibe imagens em um grid responsivo estilo Pinterest (masonry)
+  - Cartões com efeito hover, sombra e visual moderno
+  - Filtro em tempo real por nome do autor
+  - Link para visualizar a imagem original
+- Galeria com imagens estilizadas na home
 - Rodapé completo com:
   - Logo do Pinterest
   - Links úteis
@@ -31,15 +40,20 @@ Este projeto é uma réplica visual simplificada do site Pinterest, desenvolvido
 
 ![image](https://github.com/user-attachments/assets/cdfdcec8-ac83-4772-9877-b41c7e385745)
 
+## 🚀 Como executar
+
+```bash
+npm install
+npm run dev
+```
+
+Acesse [http://localhost:5173](http://localhost:5173) no navegador.
+
+- Clique em **Explorar** para acessar a página de fotos estilo Pinterest.
+- Clique no logo ou no texto "Pinterest" para voltar para a página inicial.
 
 ## 👥 Desenvolvido por
 
 - **Bruno**
 - **Charles**
 - **Rodrigo**
-
-## 🚀 Como executar
-
-```bash
-npm install
-npm run dev
