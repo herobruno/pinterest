@@ -1,0 +1,114 @@
+.photos-page-bg {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  padding: 32px 8px;
+}
+
+.photos-search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.photos-search-input {
+  width: 100%;
+  max-width: 350px;
+  padding: 12px 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 24px;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+  background: #fff;
+  color: #222;
+}
+.photos-search-input:focus {
+  border: 1.5px solid #e60023;
+  box-shadow: 0 4px 16px rgba(230,0,35,0.08);
+}
+
+.photos-masonry-grid {
+  display: flex;
+  margin-left: -16px;
+  width: auto;
+}
+.photos-masonry-grid_column {
+  padding-left: 16px;
+  background-clip: padding-box;
+}
+
+.photos-card {
+  background: #fff;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  border: 1px solid #f3f4f6;
+  display: flex;
+  flex-direction: column;
+}
+.photos-card:hover {
+  box-shadow: 0 8px 32px rgba(230,0,35,0.13);
+  transform: translateY(-4px) scale(1.025);
+  border: 1.5px solid #e60023;
+}
+
+.photos-img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  object-fit: cover;
+  min-height: 180px;
+  max-height: 340px;
+}
+
+.photos-card-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px 12px 18px;
+}
+
+.photos-author {
+  font-weight: 600;
+  color: #222;
+  font-size: 1rem;
+  max-width: 140px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.photos-link {
+  color: #e60023;
+  font-size: 0.95rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.photos-link:hover {
+  color: #b91c1c;
+  text-decoration: underline;
+}
+
+.photos-loader {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  color: #e60023;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.photos-notfound {
+  text-align: center;
+  color: #888;
+  font-size: 1.1rem;
+  margin-top: 32px;
+  width: 100%;
+} 
